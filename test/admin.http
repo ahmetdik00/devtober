@@ -1,5 +1,5 @@
 
-@server=http://localhost:4004
+@server=https://084b9c81trial-dev-devtober-srv.cfapps.us10-001.hana.ondemand.com/
 @service=/odata/v4/admin
 
 ####

@@ -6,21 +6,23 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap-cloud-sdk/connectivity": "^3.4.0",
-    "@sap-cloud-sdk/http-client": "^3.4.0",
-    "@sap-cloud-sdk/resilience": "^3.4.0",
-    "@sap-cloud-sdk/util": "^3.4.0",
-    "@sap/cds": "^7",
-    "@sap/cds-hana": "^2",
-    "@sap/xssec": "^3",
+    "@cap-js/hana": "^1",
+    "@sap-cloud-sdk/connectivity": "^3.22.2",
+    "@sap-cloud-sdk/http-client": "^3.22.2",
+    "@sap-cloud-sdk/resilience": "^3.22.2",
+    "@sap-cloud-sdk/util": "^3.22.2",
+    "@sap/cds": "^8",
+    "@sap/cds-hana": "^2.0.0",
+    "@sap/xssec": "^4.2.4",
     "express": "^4",
-    "passport": "^0"
+    "passport": "^0.7.0"
   },
   "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
     "@cap-js/sqlite": "^1",
-    "@sap/cds-dk": "^7",
-    "@sap/ux-specification": "^1.108.11",
-    "rimraf": "^3.0.2"
+    "@sap/cds-dk": "^8",
+    "@sap/ux-specification": "UI5-1.129",
+    "rimraf": "^6.0.1"
   },
   "scripts": {
     "start": "cds-serve",
@@ -34,25 +36,8 @@
   ],
   "cds": {
     "requires": {
-      "[development]": {
-        "OP_API_MAINTNOTIFICATION": {
-          "kind": "odata-v2",
-          "model": "srv/external/OP_API_MAINTNOTIFICATION"
-        }
-      },
-      "[production]": {
-        "auth": "xsuaa",
-        "db": "hana",
-        "OP_API_MAINTNOTIFICATION": {
-          "kind": "odata-v2",
-          "model": "srv/external/OP_API_MAINTNOTIFICATION",
-          "csrf": true,
-          "credentials": {
-            "destination": "s4v-ui-runtime",
-            "path": "/sap/opu/odata/sap/API_MAINTNOTIFICATION"
-          }
-        }
-      }
+      "auth": "xsuaa",
+      "db": "hana"
     }
   }
 }

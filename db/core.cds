@@ -9,4 +9,3 @@ entity MaintenanceItem: cuid, managed {
     problemDescription : String(5000);
     
 }
-

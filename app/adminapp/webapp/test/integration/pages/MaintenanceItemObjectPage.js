@@ -10,7 +10,7 @@ sap.ui.define(['sap/fe/test/ObjectPage'], function(ObjectPage) {
         {
             appId: 'riz.devtober.ui.adminapp',
             componentId: 'MaintenanceItemObjectPage',
-            entitySet: 'MaintenanceItem'
+            contextPath: '/MaintenanceItem'
         },
         CustomPageDefinitions
     );

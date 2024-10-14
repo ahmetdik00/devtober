@@ -1,4 +1,11 @@
 {
-    "SAP HANA Database Explorer.displaySapWebAnalyticsStartupNotification": false,
-    "SAP HANA Database Explorer.enableSapWebAnalytics": false
+  // uncomment entries once all libraries have been installed via 'npm install'
+  "eslint.validate": [
+    // "cds",
+    // "csn",
+    // "csv",
+    // "csv (semicolon)",
+    // "tab",
+    // "tsv"
+  ]
 }
